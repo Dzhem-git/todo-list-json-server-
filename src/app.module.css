@@ -1,0 +1,166 @@
+.app {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: Arial, sans-serif;
+}
+
+.emptyMessage {
+	text-align: center;
+	color: #666;
+	font-style: italic;
+	padding: 40px;
+}
+
+.todoList {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.todoItem {
+	padding: 12px 16px;
+	border-bottom: 1px solid #e0e0e0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: white;
+	gap: 15px;
+}
+
+.todoItem:last-child {
+	border-bottom: none;
+}
+
+.todoContent {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex-grow: 1;
+}
+
+.todoContent label {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	cursor: pointer;
+	margin: 0;
+}
+
+.checkbox {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	accent-color: #4caf50;
+}
+
+.todoText {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.completed .todoText {
+	text-decoration: line-through;
+	color: #888;
+	opacity: 0.7;
+}
+
+.updatingText {
+	color: #666;
+	font-style: italic;
+	font-size: 14px;
+}
+
+.deleteButton {
+	padding: 8px 16px;
+	background-color: #f44336;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: normal;
+	white-space: nowrap;
+}
+
+.deleteButton:hover:not(:disabled) {
+	background-color: #d32f2f;
+}
+
+.deleteButton:disabled {
+	background-color: #ccc;
+	color: #666;
+	cursor: not-allowed;
+}
+
+.addButtonContainer {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.addButton {
+	padding: 12px 24px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.addButton:hover:not(:disabled) {
+	background-color: #388e3c;
+}
+
+.addButton:disabled {
+	background-color: #ccc;
+	color: #666;
+	cursor: not-allowed;
+}
+
+.sortButton {
+	padding: 12px 24px;
+	background-color: #2196f3;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.sortButton:hover:not(:disabled) {
+	background-color: #1976d2;
+}
+
+.sortButton:disabled {
+	background-color: #ccc;
+	color: #666;
+	cursor: not-allowed;
+}
+
+.actionsContainer {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.activeSort {
+	background-color: #1565c0;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.searchContainer {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.searchInput {
+	width: 60%;
+	padding: 10px 15px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
